@@ -1,25 +1,25 @@
-import bg from '../src/Images/bg.png'
-import styled from 'styled-components';
-import { MainLayout } from './Styles/Layout';
-import Orb from './Components/Orb/Orb';
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    
-    <AppStyled bg={bg} className="App">
-      <Orb></Orb>
-      <MainLayout>
-
-      </MainLayout>
-    </AppStyled>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
-
-const AppStyled = styled.div`
-  height:100vh;
-  background-image:url('${props => props.bg}');
-  position:relative;
-`;
 
 export default App;
